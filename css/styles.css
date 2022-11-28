@@ -53,6 +53,12 @@ ul {
   padding: 0;
 }
 
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .page-header {
   display: flex;
 }
@@ -154,26 +160,27 @@ ul {
 
 /* Style Studio */
 
-li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.hero {
+  background-color: var(--bgr-footer);
+  text-align: center;
+  height: 400px; /* temporarily */
 }
-
 .title-one {
+  display: inline-block;
   margin-bottom: 30px;
+  margin-top: 60px;
+  margin-right: auto;
+  width: 696px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  align-self: baseline;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero {
-  background-color: var(--bgr-footer);
-  text-align: center;
-}
+
 .section {
   padding-top: 94px;
   outline: brown;
@@ -198,6 +205,7 @@ button.active {
   text-align: center;
   cursor: pointer;
   font-family: Roboto, sans-serif;
+  nav-left: auto;
 }
 
 .button.active:hover,
