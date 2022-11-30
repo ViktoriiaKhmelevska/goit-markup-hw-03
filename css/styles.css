@@ -23,12 +23,14 @@ html {
 }
 
 body {
+  margin: 0 auto;
+  padding: 0 200px;
+
   background-color: var(--primary-white-color);
   color: var(--accent-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -56,6 +58,7 @@ ul {
 li {
   padding: 0;
   margin: 0;
+
   list-style: none;
 }
 .container {
@@ -69,20 +72,24 @@ li {
 
 .page-header {
   display: flex;
-  /* margin-left: auto; */
+  margin-left: auto;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 .site-nav-ul {
   display: flex;
   /* align-items: center; */
   margin-left: 93px;
 }
-.site-nav .item + .item {
+
+.site-nav-ul .item + .item {
   margin-left: 50px;
 }
 
@@ -111,11 +118,10 @@ li {
 }
 .auth-nav {
   display: flex;
-  margin-left: 40px;
+  margin-left: auto;
 }
 .auth-nav .item + .item {
-  margin-left: auto;
-  /* align-items: center; */
+  margin-left: 40px;
 }
 
 .site-nav-contact {
@@ -157,22 +163,26 @@ li {
 /* Style Studio */
 
 .hero {
-  background-color: var(--bgr-footer);
   text-align: center;
-  height: 400px; /* temporarily */
+  padding: 200px 252px;
+  width: 1600px;
+
+  background-color: var(--bgr-footer);
 }
+
 .title-one {
-  display: inline-block;
+  display: block;
   margin-bottom: 30px;
-  margin-top: 60px;
   margin-right: auto;
+  margin-left: auto;
   width: 696px;
+  align-self: baseline;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  align-self: baseline;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -184,8 +194,10 @@ li {
 button.active {
   display: inline-block;
   min-width: 200px;
-  box-shadow: 0px 4px 4px var(--button-shadow);
   padding: 10px 24px;
+  nav-left: auto;
+
+  box-shadow: 0px 4px 4px var(--button-shadow);
   border-radius: 4px;
   color: var(--primary-white-color);
   background-color: var(--button-link-color);
@@ -195,7 +207,6 @@ button.active {
   text-align: center;
   cursor: pointer;
   font-family: Roboto, sans-serif;
-  nav-left: auto;
 }
 
 .button.active:hover,
@@ -208,11 +219,12 @@ button.active {
 }
 
 .title-benefits {
+  margin-bottom: 10px;
+
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 10px;
 }
 
 .text-benefits {
@@ -222,25 +234,28 @@ button.active {
 }
 
 .title-work {
+  text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
+
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17x;
-  text-align: center;
-  margin-bottom: 50px;
-  text-align: center;
 }
 .section-command {
-  background: var(--button-second-color);
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background: var(--button-second-color);
 }
 .command {
+  text-align: center;
+
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
 }
 
 .command-li {
@@ -264,17 +279,20 @@ button.active {
 .filter {
   padding: 6px 22px;
   border-radius: 4px;
+  text-align: center;
+
   color: var(--primary-text-color);
   background-color: var(--button-second-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   cursor: pointer;
   font-family: inherit;
 }
 .filter.active {
   padding: 6px 22px;
+  text-align: center;
+
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -283,7 +301,6 @@ button.active {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   cursor: pointer;
 }
 
@@ -321,29 +338,33 @@ button.active {
   display: inline-block;
   width: 145px;
   height: 31px;
+  padding-top: 60px;
+
   color: var(--primary-white-color);
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  padding-top: 60px;
 }
 .footer-position,
 .footer-link {
   display: inline-block;
+
   color: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
 }
 .footer-link {
+  padding-top: 12px;
+
   color: var(--footer-main-color);
   text-decoration: none;
-  padding-top: 12px;
 }
 .address {
   padding-top: 28px;
   padding-bottom: 60px;
+
   font-style: normal;
 }
 .adress .li {
