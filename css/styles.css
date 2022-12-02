@@ -435,7 +435,9 @@ address {
 }
 
 button {
+  cursor: pointer;
   border: none;
+  border-radius: 4px;
 }
 .section {
   padding-top: 94px;
