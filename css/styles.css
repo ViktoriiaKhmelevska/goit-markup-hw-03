@@ -211,9 +211,8 @@ img {
 }
 
 .section-two {
-  background-color: var(--bgr-section);
   padding-top: 94px;
-  padding-bottom: 118px;
+  padding-bottom: 94px;
 }
 
 .section-two-list {
@@ -244,8 +243,8 @@ img {
 }
 
 .section-three {
-  background-color: var(--bgr-section);
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .section-three-list {
   background-color: var(--bgr-section);
@@ -256,7 +255,6 @@ img {
   text-align: center;
   margin-bottom: 50px;
   text-align: center;
-  background-color: var(--bgr-section);
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -264,7 +262,7 @@ img {
 }
 .section-command {
   padding-bottom: 94px;
-
+  padding-top: 94px;
   background: var(--button-second-color);
 }
 .command {
@@ -402,7 +400,6 @@ img {
 .footer-position,
 .footer-link {
   display: inline-block;
-  /* margin-bottom: 28px; */
   color: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.71;
